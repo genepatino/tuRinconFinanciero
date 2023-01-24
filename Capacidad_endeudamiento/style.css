@@ -1,0 +1,178 @@
+:root{
+    --blue: #1c3987;
+    --blue-main: #004797;
+    --gray: #80808063;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .04rem;
+}
+
+.container{
+    width: 80%;
+    max-width: 1066px;
+    padding: 44px 0px;
+    margin: 0 auto;
+    border: 1px solid var(--gray);
+    display: grid;
+    gap: 40px;
+}
+
+.header_logo-entidad-image{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.container_logo-entidad{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+h3{
+    color: var(--blue);
+    letter-spacing: .16rem;
+}
+
+.hero-parrafo{
+    letter-spacing: .06rem;
+}
+
+.figure-logo{
+    margin-bottom: 20px;
+}
+
+.logoTRF{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.hero-image{
+    width: 200px;
+    height: 200px;
+}
+
+.border-image{
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    border: 2px solid gray;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.informacion-varia{
+    padding: 0 40px;
+}
+
+.main-informacion{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: var(--blue-main);
+    color: white;
+    padding: 40px;
+}
+
+.info-endeudamiento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.h2-endeudamiento{
+    border-bottom: 1px solid;
+}
+
+.prestamo-img{
+    width: 300px;
+}
+
+.border-prestamo-img{
+    height: 200px;
+    position: absolute;
+    width: 300px;
+    border: 2px solid gray;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.porcentaje-endeudamiento{
+    padding: 0 40px
+}
+
+.calculo{
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 500px auto;
+    gap: 20px;
+}
+
+.capacidad-endeudamiento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.3rem;
+    color: #6d6969;
+    margin-bottom: 4px;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;outline: none;
+    border: 1px solid var(--gray);
+}
+
+button{
+    background-color: var(--blue-main);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+button:hover{
+    background-color: var(--blue);
+}

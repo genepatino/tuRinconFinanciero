@@ -27,13 +27,14 @@
             </figure>
         </header>
         <section class="informacion-varia">
-            <p>De acuerdo con lo establecido por la ley de Vivienda (Ley 546 del año 1999) la cuota mensual de un crédito hipotecario no puede superar el 30% de los ingresos mensuales del núcleo familiar.<br/> Al momento de comprar una propiedad verifica que tus ingresos mensuales sean los suficientes para atender una obligación de este tipo.<br/> Y es aquí, cuando hablamos de calcular la capacidad de endeudamiento.</p>
+            <p>De acuerdo con lo establecido por la ley de Vivienda (Ley 546 del año 1999) la cuota mensual de un crédito hipotecario no puede superar el 30% de los ingresos mensuales del núcleo familiar.<br/> Al momento de comprar una propiedad verifica que tus ingresos mensuales sean los suficientes para atender una obligación de este tipo. Y es aquí, cuando hablamos de calcular la capacidad de endeudamiento.</p>
         </section>
         <main class="main-informacion">
             <section class="info-endeudamiento">
                 <h2 class="h2-endeudamiento">Capacidad de Endeudamiento</h2>
                 <p>La capacidad de endeudamiento es la cantidad de deuda máxima que puede asumir una persona o una empresa sin llegar a tener problemas de solvencia. Se suele establecer como un porcentaje sobre los ingresos.</p>
-                <p>La capacidad de endeudamiento considerada como estándar se sitúa entre el 30% y el 40% de los ingresos. Esto se traduce en que idealmente la suma de las cuotas mensuales de las deudas no debería ser mayor a 1/3 de la remuneración de la persona o la empresa.</p>
+                <p>La capacidad de endeudamiento considerada como estándar se sitúa entre el 30% y el 40% de los ingresos. Esto se traduce en que tus gastos mensuales no deben superar en un 30% o 40% de tus ingresos.</p>
+                <p>De superar este porcentaje, las personas o empresas empiezan a tener dificultades financieras.</p>
             </section>
             <figure>
                 <div class="border-prestamo-img"></div>
@@ -42,12 +43,12 @@
         </main>
         <section class="porcentaje-endeudamiento">
             <p>En Colombia existe un porcentaje estándar en la mayoria de entidades financieras y es de un 40%, como es el caso, tomaremos ese referente.</p>
-            <p>Hoy, vamos a ayudarte a calcular tu porcentaje de <strong>capacidad de endeudamiento</strong>  y el monto por el cual podrías endeudarte.</p>
+            <p>Hoy, vamos a ayudarte a calcular tu porcentaje de <strong>capacidad de endeudamiento</strong>  y el monto por el cual podrías endeudarte mensualmente.</p>
         </section>
         <main class="calculo">
             <section class="capacidad-endeudamiento">
                 <h3>Capacidad de endeudamiento</h3>
-                <p>Tu capacidad de endeudamiento debe ser del 40% o menos.</p>
+                <p>Tu capacidad de endeudamiento debe ser del 40% o menos. De no ser así, el banco asumirá que ha financiado sus activos con pasivos, dinero de terceros o deudas. No será considerado para un posible prestamo.</p>
                 <p>Para calcular tu capacidad de endeudamiento, es importante que previamente hayas contabilizado tus deudas y obligaciones totales del mes, sean estas:
                     <ul>
                         <li>Vivienda,</li>
@@ -56,18 +57,44 @@
                         <li>Transporte,</li>
                         <li>Educacion,</li>
                         <li>Financieras,</li>
-                        <li>Personales, entre otros;</li> 
+                        <li>Personales, entre otras;</li> 
                     </ul>
                     al igual que tus ingresos totales del mes.
                 </p>
-                <p></p>
             </section>
              <form id="form">
                 <label for="gastos">Gastos totales del mes</label>
-                <input type="number" id="gastos">
+                <input type="number" id="gastos" autocomplete="on" class="input">
                 <label for="ingresos">Ingresos totales del mes</label>
-                <input type="number" id="ingresos">
+                <input type="number" id="ingresos" class="input">
                 <button id="button" type="submit">Calcular</button>
+                <section class="message-icon">
+                    <figure>
+                        <img id='icon' src="" alt="">
+                    </figure>
+                    <p class="message" id="message"></p>
+                </section>
+            </form>
+        </main>
+        <main class="calculo">
+            <section class="capacidad-endeudamiento">
+                <h3>Monto de endeudamiento mensual</h3>
+                <p>Ya asumiento que tienes un porcentaje de endeudamiento valido; le restaremos a tus ingresos mensuales tus gastos totales del mes. Esto nos arrojará tus ingresos netos, y a esté lo multiplicaremos por el estandar de endeudamiento, es decir, 40%. El resultado será la cantidad máxima que puedes usar para endeudarte.</p>
+                <p>Ojo, si el resultado es negativo, no tienes capacidad de endeudamiento.</p>
+                
+            </section>
+             <form id="form">
+                <label for="ingresos-monto">Ingresos totales del mes</label>
+                <input type="number" id="ingresos-monto" autocomplete="on" class="input">
+                <label for="gastos-monto">Gastos totales del mes</label>
+                <input type="number" id="gastos-monto" autocomplete="on" class="input">
+                <button id="button-monto" type="submit">Calcular</button>
+                <section class="message-icon">
+                    <figure>
+                        <img id='icon-monto' src="" alt="">
+                    </figure>
+                    <p class="message" id="message-monto"></p>
+                </section>
             </form>
         </main>
     </div>

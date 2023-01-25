@@ -21,7 +21,6 @@ body{
 }
 
 .container{
-    width: 80%;
     max-width: 1066px;
     padding: 44px 0px;
     margin: 0 auto;
@@ -46,7 +45,7 @@ body{
 
 h3{
     color: var(--blue);
-    letter-spacing: .16rem;
+    letter-spacing: .12rem;
 }
 
 .hero-parrafo{
@@ -102,6 +101,7 @@ h3{
 
 .h2-endeudamiento{
     border-bottom: 1px solid;
+    margin-bottom: 10px;
 }
 
 .prestamo-img{
@@ -125,16 +125,18 @@ h3{
 }
 
 .calculo{
-    padding: 0 40px;
+    padding: 0 40px 20px;
     display: grid;
-    grid-template-columns: 500px auto;
-    gap: 20px;
+    grid-template-columns: auto 400px;
+    gap: 40px;
+    border-bottom: 2px ridge;
 }
 
 .capacidad-endeudamiento{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 400px;
 }
 
 ul{
@@ -147,18 +149,35 @@ form{
 }
 
 label{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #6d6969;
     margin-bottom: 4px;
 }
 
-input{
+.input{
     margin-bottom: 10px;
     width: 100%;
     padding: 8px;
     border-radius: 4px;
-    box-sizing: border-box;outline: none;
+    box-sizing: border-box;
+    outline: none;
     border: 1px solid var(--gray);
+}
+
+.input:focus{
+    border-radius: 0; 
+    border: 1px solid #0000ff54; 
+    border-top: none; 
+    border-left: none; 
+    border-right: none
+}
+
+.input-warn{
+    border-radius: 0; 
+    border: 1px solid red; 
+    border-top: none; 
+    border-left: none; 
+    border-right: none
 }
 
 button{
@@ -171,8 +190,38 @@ button{
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 800;
+    margin-top: 14px;
 }
 
 button:hover{
     background-color: var(--blue);
+}
+
+.message-icon{
+    display: flex;
+    margin-top: 14px;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.message-icon-warn{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.icon-message{
+    width: 36px;
+    height: 34px;
+    margin: 0;
+}
+
+.icon-message-warn{
+    width: 30px;
+}
+
+
+.message{
+    font-size: 1.54rem;
+
 }

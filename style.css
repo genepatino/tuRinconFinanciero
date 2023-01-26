@@ -31,11 +31,11 @@ body{
 }
 
 .header_logo-entidad-image{
-    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 400px auto;
     gap: 20px;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .container_logo-entidad{
